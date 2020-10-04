@@ -1,11 +1,8 @@
 import React from "react";
 import BookSelf from "./BookSelf";
-
 import * as BooksAPI from "./BooksAPI";
 import "./App.css";
 import SearchBar from "./SearchBar";
-
-
 class BooksApp extends React.Component {
   state = {
     showSearchPage: false,
@@ -31,10 +28,6 @@ class BooksApp extends React.Component {
     this.setView();
   }
   componentWillMount() {
-    /**
-     * clear the storage to prevent the authentication error in api ( ^ - ^ )
-     */
-    // localStorage.clear();
   }
   handleMove = (e, id) => {
     const {value } = e.target;
